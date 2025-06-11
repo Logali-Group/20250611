@@ -3,14 +3,15 @@
  */
 
 sap.ui.define([
-        "sap/ui/core/UIComponent",
-        "sap/ui/Device",
-        "products/model/models"
-    ],
+    "sap/ui/core/UIComponent",
+    "sap/ui/Device",
+    "products/model/models"
+],
     function (UIComponent, Device, models) {
         "use strict";
 
         return UIComponent.extend("products.Component", {
+
             metadata: {
                 manifest: "json"
             },
@@ -20,6 +21,7 @@ sap.ui.define([
              * @public
              * @override
              */
+
             init: function () {
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
@@ -30,6 +32,7 @@ sap.ui.define([
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
             }
+
         });
     }
 );

@@ -5,8 +5,10 @@ function (Controller) {
     "use strict";
 
     return Controller.extend("products.controller.Main", {
+
         onInit: function () {
 
         }
+
     });
 });
